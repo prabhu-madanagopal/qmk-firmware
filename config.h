@@ -20,6 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
 #define PRODUCT_ID      0x3536
 #define DEVICE_VER      0x0001
 #define PRODUCT         Dactyl-Manuform (5x6)
