@@ -4,6 +4,8 @@ LEADER_EXTERNS();
 void matrix_scan_user(void) {
   LEADER_DICTIONARY() {
 
+      leading = false;
+
     SEQ_ONE_KEY(KC_TAB) {
       SEND_STRING(SS_LCTL("0"));
     }
@@ -98,5 +100,7 @@ void matrix_scan_user(void) {
     }
     // Call leader_end at the end of the function, instead of at
     // the start. This way, we're sure we have set did_leader_succeed.
+
+      leader_end ();
   }
 }
